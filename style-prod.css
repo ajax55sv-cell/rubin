@@ -120,7 +120,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 .s-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 14px; }
 .s-steps__item { background: var(--c-surface); border-radius: var(--r); padding: 22px; border: 1px solid var(--hair); }
 .s-steps__n { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--c-accent); color: var(--c-accent-ink); font: 700 .85rem var(--f-text); }
-.s-steps h3 { font-size: 1.1rem; margin-top: 14px; overflow-wrap: anywhere; hyphens: auto; }
+.s-steps h3 { font-size: 1.1rem; margin-top: 14px; overflow-wrap: normal; hyphens: none; }
 .s-steps__item { min-width: 0; }
 .s-steps p { margin-top: 8px; color: var(--c-ink-soft); font-size: .95rem; }
 
@@ -201,3 +201,6 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
   .s-dock .s-btn { flex: 1; min-height: 48px; font-size: .88rem; padding: 0 .9em; white-space: nowrap; }
   .s-dock .s-btn:first-child { flex: 1.7; }
 }
+
+/* никаких переносов слов */
+html, body, * { hyphens: none; -webkit-hyphens: none; }
